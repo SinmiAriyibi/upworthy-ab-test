@@ -7,7 +7,7 @@
 
 ![Winner's curse](outputs/winners_curse.png)
 
-Every content product runs this test: show people a few versions, ship the one with the most clicks. This project asks how often that winner is real and how often it got lucky. The data is Upworthy's record of 32,487 randomized headline tests from 2013 to 2015. I used the archive's exploratory set to find patterns and its confirmatory set (22,743 tests it set aside) to check them.
+Every content product runs this test: show people a few versions, ship the one with the most clicks. This project asks how often that winner is real and how often it got lucky. The data is Upworthy's archive of randomized headline tests from 2013 to 2015: 27,616 tests across two files, 21,657 after cleaning. I used the exploratory set (4,873 tests) to find patterns and the confirmatory set (22,743 tests the archive set aside) to check them.
 
 ## What I found
 
@@ -26,13 +26,13 @@ Every content product runs this test: show people a few versions, ship the one w
 | Negative word | +4.0% | +4.0% |
 | Each extra word | +1.1% | +1.0% |
 
-6. **A simple rule built on those features picks better.** On 17,832 held-out tests, the headline it likes best beats its test's other headlines 54.6% of the time (random pick: 48.1%), with a 9.4% average uplift (random: 2.9%). A modest edge, and a real one.
+6. **A simple rule built on those features picks better, on tests it never saw.** The rule was built on the exploratory tests only. On 17,832 held-out confirmatory tests, the headline it likes best beats its test's other headlines **54.6%** of the time (random pick: **48.1%**), with a **9.4%** average uplift (random: **2.9%**). A modest edge, and a real one.
 
 ## What I'd tell a product team
 
 - **Don't ship a winner from a many-headline test without a rerun.** Take the winner and the runner-up and test them against fresh traffic. The first result overstates the lift.
 - **Run fewer headlines with more traffic each.** The inflated winner gets worse with every added headline.
-- **Use the feature findings as a starting point for writing, not a rule.** Skip the question mark. Numbers, "this" and emotional language tend to help.
+- **Use the feature findings as a starting point for writing, not a rule.** Patterns that held up in both the exploratory and confirmatory tests (fewer question marks; numbers, "this" and emotional language) are worth trying first. Then validate them on your own audience.
 - **Check the traffic split before reading any result.** Tests from Jun 2013 to Jan 2014 had broken splits (79% failed the check versus 2% elsewhere), so I dropped them.
 
 ## Method
