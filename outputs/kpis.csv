@@ -1,0 +1,11 @@
+,value
+tests_raw,27616.0
+tests_clean,21657.0
+top_lift_observed,0.40874099767726535
+top_lift_noise,0.25238879030073147
+arms_differ_share,0.4533221194280908
+mde_relative,0.614522380279149
+pick_beats_avg,0.5464894571556752
+random_beats_avg,0.48054060116644237
+pick_uplift,0.09421137069890884
+random_uplift,0.028932435441981423
