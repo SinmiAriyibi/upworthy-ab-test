@@ -1,7 +1,7 @@
 # When is an A/B test winner real?
 
 **An analysis of 27,616 randomized headline tests (Upworthy Research Archive)**
-`Python` `pandas` `scipy` `Tableau` · Notebook: `upworthy_ab_test_analysis.ipynb` · Dashboard: https://public.tableau.com/views/UpworthyABTestWhenIsaWinnerReal/WhenisanABtestwinnerreal
+`Python` `pandas` `scipy` `Tableau` · Notebook: `upworthy_ab_test_analysis.ipynb` · Dashboard: https://public.tableau.com/views/UpworthyABTestWhenIsaWinnerReal/WhenisanABtestwinnerreal · Portfolio: https://sinmiariyibi.my.canva.site
 
 **The one-line answer:** don't ship the winner of a single test. Rerun it first.
 
